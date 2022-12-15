@@ -15,7 +15,7 @@
     <link href="maps.css" rel="stylesheet">
   </head>
   <body>
-    <h3 id="title">My Location</h3>
+    <h3 id="title">GPS Location</h3>
     
     <div class="container">
         <div id="map"></div>

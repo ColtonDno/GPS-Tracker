@@ -1,5 +1,5 @@
 <?php
-$hide_location = 0;
+$hide_location = 1;
 $multi_marker = 1;
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -107,13 +107,11 @@ function initMap() {
         map: map
       });
           
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
-        }
-      })(marker, i));
-    }
+      google.maps.event.addListener(marker, 'click', (function() {
+        window.open("https://www.google.com/maps/search/?api=1&query=<?php echo $lat_center?>,<?php echo $lon_center?>", '_blank');
+          
+      }
+    ))};
         
     const circle = new google.maps.Circle({
       strokeColor: "#FF0000",
