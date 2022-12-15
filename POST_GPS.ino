@@ -1,3 +1,4 @@
+//Change to SIM chip being used
 #define TINY_GSM_MODEM_SIM7000
 
 // Set serial for debug console (to the Serial Monitor, default speed 115200)
