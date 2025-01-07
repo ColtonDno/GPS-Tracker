@@ -1,3 +1,5 @@
-# ESP32-SIM7000-HTTP-GPS-Tracker
- 
-https://dev.coltondno.com/map/
+# GPS-Tracker 
+
+https://coltondno.site/gps/
+
+This project uses the LILYGO T-SIM7000G ESP32 development board to track the device's position and send it to a database.

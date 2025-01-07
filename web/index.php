@@ -1,5 +1,6 @@
 <?php 
-    require("maps.php");
+    require("../api/keys.php");
+    require("map/GPS_Location_Map.php");
 ?>
 
 <!DOCTYPE html>
@@ -11,8 +12,7 @@
 <html>
   <head>
     <title>GPS Tracker</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link href="maps.css" rel="stylesheet">
+    <link href="map/map.css" rel="stylesheet">
   </head>
   <body>
     <h3 id="title">GPS Location</h3>
@@ -21,6 +21,6 @@
         <div id="map"></div>
     </div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCH8R76C-emfAJm2lBATDlGQPkR6y1q5Y&callback=initMap&v=weekly" defer></script>
+    <script src="<?php echo $google_maps_api_key?>" defer></script>
   </body>
 </html>
